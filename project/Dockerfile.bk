@@ -1,0 +1,11 @@
+FROM python:3.11-slim
+
+RUN apt-get update && apt-get install -y default-mysql-client && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /backend
+
+COPY . /backend
+
+RUN pip install mysql-connector-python
+
+CMD ["sh", "-c", "python3 db.py && python3 table.py && python3 platform_info.py"]
