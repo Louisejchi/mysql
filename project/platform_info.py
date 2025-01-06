@@ -5,7 +5,8 @@ conn = None
 try:
     # Connect to the MySQL database
     conn = mysql.connector.connect(
-        host="mysql_server",
+        #host="mysql_server",
+        host="127.0.0.1",
         user="user",
         password="passwd",
         database="shopping"

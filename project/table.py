@@ -18,11 +18,11 @@ def create_tables(cursor):
     CREATE TABLE IF NOT EXISTS Subscriptions (
         sub_id INT AUTO_INCREMENT PRIMARY KEY,
         order_id VARCHAR(255) NOT NULL,
-        email_id VARCHAR(255),
-        dc_id VARCHAR(255),
+        email VARCHAR(255),
+        discord_id VARCHAR(255),
         platform_id INT NOT NULL,
         sub_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-        CONSTRAINT email_or_dc CHECK (email_id IS NOT NULL OR dc_id IS NOT NULL),
+        CONSTRAINT email_or_dc CHECK (email IS NOT NULL OR discord_id IS NOT NULL),
         FOREIGN KEY (order_id) REFERENCES Parcels (order_id)
     )
     """)
@@ -54,7 +54,8 @@ def main():
     try:
         # Connect to the MySQL database
         conn = mysql.connector.connect(
-            host="mysql_server",
+            #host="mysql_server",
+            host="127.0.0.1",
             user="user",
             password="passwd",
             database="shopping"

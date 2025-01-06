@@ -19,7 +19,8 @@ def create_user_and_grant_privileges(cursor):
 def connect_to_mysql():
     """Establish a connection to the MySQL server."""
     return mysql.connector.connect(
-        host="mysql_server",
+        #host="mysql_server",
+        host="127.0.0.1",
         user="root",  # User with sufficient privileges (e.g., root)
         password="passwd"  # Root password
     )
