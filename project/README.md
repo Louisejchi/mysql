@@ -25,7 +25,7 @@
 台灣有非常多的物流平台，而蝦皮等電商平台在商品送到後並不會立即通知我們去取貨，有時甚至會延遲半天之久。所以我們設計了一個 Discord Bot，透過Discord 指令來查詢不同物流的包裹進度，而且還不用輸入那些麻煩的驗證碼。同時我們還設計一個訂單查詢平台，結合到包裹追蹤的 discord 機器人，讓兩邊都 能同步使用服務。
 
 <p align="center">
-    <img src="img/architecture.png" width="50%">
+    <img src="../img/architecture.png" width="50%">
 </p>
 
 - 查詢不同物流公司的包裹進度，例如 7-11、全家、蝦皮、FamilyMart
@@ -226,4 +226,8 @@ http://<domain name>
 - [CORS (Cross-Origin Resource Sharing) - FastAPI](https://fastapi.tiangolo.com/tutorial/cors/#use-corsmiddleware)
 - [Get Docker](https://docs.docker.com/get-started/get-docker/)
 - [Docker | 建立 PostgreSQL 的 container 時，同時完成資料庫的初始化](https://eandev.com/post/container/docker-postgresql-initialization-scripts/)
-## Demo 實作影片
+
+## 影片
+- [架構說明](https://www.youtube.com/watch?v=mm-l2DhpoKc)
+- [Demo]()
+
