@@ -172,8 +172,8 @@ http://<domain name>
 - Discord bot
     - `/track [物流平台] [訂單編號]`: 查詢包裹進度
 
-      <p align="center"><img src="img/track01.png" width="50%"></p>
-      <p align="center"><img src="img/track02.png" width="50%"></p>
+      <p align="center"><img src=",,./img/track01.png" width="50%"></p>
+      <p align="center"><img src="../img/track02.png" width="50%"></p>
 
     - `/subscribe [物流平台] [訂單編號]`: 訂閱包裹進度，如果包裹狀態有更新會傳送訊息通知使用者
 
